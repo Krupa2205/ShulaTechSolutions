@@ -1,0 +1,164 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("BG.jpg");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  color: #333;
+  animation: fadeIn 1.5s ease-in;
+}
+
+header {
+  background-color: #f2efe7;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  animation: slideDown 1s ease-in-out;
+}
+
+h1, h2 {
+  font-family: "Kanit", sans-serif;
+  font-size: 2.2rem;
+  animation: fadeIn 2s ease-in;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.1rem;
+}
+
+nav {
+  background: #444;
+  padding: 15px 0;
+  text-align: center;
+  animation: slideUp 1s ease-in-out;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 25px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #fcc6ff;
+}
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(#f7cfd8, #e195ab);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+  transform: scale(1.02);
+}
+
+section#contact p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+section#contact a {
+  color: #0073b1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section#contact a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  nav ul li a {
+      font-size: 18px;
+  }
+
+  section {
+      width: 90%;
+      padding: 20px;
+  }
+
+  h1, h2 {
+      font-size: 1.8rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+}
+
+.social-icons {
+  margin-top: 10px;
+  animation: fadeIn 2s ease-in;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00acee;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
