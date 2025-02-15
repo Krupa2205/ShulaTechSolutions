@@ -20,12 +20,25 @@ body.dark-mode {
 
 /* Header */
 header {
-    padding: 20px;
-    background: linear-gradient(135deg, #ff7eb3, #ff758c);
-    box-shadow: 0px 5px 15px rgba(255, 118, 136, 0.3);
+    padding: 40px 20px;
+    background: url('BG.jpg') no-repeat center center/cover;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
 }
 
-/* Search Bar */
+/* Centered Rounded h1 */
+h1 {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 2rem;
+    color: rgb(17, 11, 11);
+}
+
+/* Search Bar with 3D Effect */
 .search-container {
     margin: 20px auto;
     display: flex;
@@ -34,30 +47,26 @@ header {
 }
 
 #searchInput {
-    padding: 10px;
+    padding: 12px;
     width: 50%;
     font-size: 1rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     outline: none;
+    background: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.5);
 }
 
 #searchBtn, #darkModeToggle {
-    padding: 10px 15px;
+    padding: 12px 20px;
     font-size: 1rem;
     border: none;
     cursor: pointer;
-    background: #ff758c;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
     color: white;
-    border-radius: 5px;
+    border-radius: 30px;
     transition: 0.3s;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Dark Mode Button */
-#darkModeToggle {
-    font-size: 1.2rem;
-    background: #222;
 }
 
 /* Dark Mode Styles for Header & Buttons */
@@ -77,31 +86,37 @@ header {
 /* Filters */
 .filter-container {
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .filter-btn {
-    padding: 10px 15px;
-    margin: 5px;
+    padding: 12px 20px;
+    font-size: 1rem;
     border: none;
     cursor: pointer;
-    background: #ff758c;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
     color: white;
-    border-radius: 5px;
+    border-radius: 30px;
     transition: 0.3s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .filter-btn:hover {
-    background: #ff5f75;
+    background: linear-gradient(135deg, #ff5f75, #ff758c);
+    transform: translateY(-3px);
 }
 
 /* Dark Mode for Filter Buttons */
 .dark-mode .filter-btn {
-    background: #444;
+    background: linear-gradient(135deg, #444, #555);
     color: white;
 }
 
 .dark-mode .filter-btn:hover {
-    background: #666;
+    background: linear-gradient(135deg, #666, #777);
 }
 
 /* Image Gallery */

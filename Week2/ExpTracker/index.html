@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker💰</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>💰Expense Tracker✨</h1>
+        <button id="darkModeToggle">🌙</button>
+    </header>
+
+    <div class="container">
+        <!-- Left Section -->
+        <div class="expense-section">
+            <div class="expense-form">
+                <input type="text" id="expenseName" placeholder="Expense Name">
+                <input type="number" id="expenseAmount" placeholder="Amount">
+                <select id="expenseCategory">
+                    <option value="Food">🍔 Food</option>
+                    <option value="Transport">🚗 Transport</option>
+                    <option value="Shopping">🛍️ Shopping</option>
+                    <option value="Entertainment">🎬 Entertainment</option>
+                    <option value="Others">📌 Others</option>
+                </select>
+                <button id="addExpense">Add Expense</button>
+            </div>
+
+            <div class="expense-list">
+                <h2>Expense List</h2>
+                <ul id="expenses"></ul>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="chart-section">
+            <h2>Expense Summary</h2>
+            <canvas id="expenseChart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
