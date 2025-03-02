@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom 3D effect */
+.chat-container {
+    transform: perspective(1000px) rotateY(10deg);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Dark mode */
+  .dark {
+    background-color: #1A1A1A;
+    color: #F5F5F5;
+  }
