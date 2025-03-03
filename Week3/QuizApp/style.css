@@ -1,0 +1,107 @@
+body {
+  font-family: 'Kanit', sans-serif;
+  background: linear-gradient(135deg, #E6B2BA, #C599B6, #E6B2BA);
+  background-size: 200% 200%;
+  animation: waveAnimation 10s ease infinite;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+@keyframes waveAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.quiz-container {
+  background: rgba(0, 0, 0, 0.6); 
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  font-family: 'Sigmar', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.timer {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.question-container {
+  margin-bottom: 1.5rem;
+}
+
+.question {
+  font-family: 'Atkinson Hyperlegible Next', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.options button {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.options button:hover {
+  background: rgba(255, 255, 255, 0.3); 
+}
+
+.next-btn {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 111, 97, 0.8); 
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.next-btn:hover {
+  background: rgba(255, 59, 47, 0.8);
+}
+
+.score-container {
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+
+.correct {
+  background: rgba(144, 238, 144, 0.8) !important; 
+}
+
+.incorrect {
+  background: rgba(255, 99, 71, 0.8) !important;
+}
